@@ -1,1 +1,1 @@
-#Proyectos desarrollados en el semillero 2025 de Zero2Hero
+Proyectos desarrollados en el semillero 2025 de Zero2Hero
