@@ -1,0 +1,245 @@
+body{
+    background-color:#d5dbe2;
+}
+
+.navigation{
+    ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: #50697d;
+        display: flex;
+        justify-content: center;
+        position:fixed;
+        top:0;
+        width:100%;
+        z-index: 2;
+    }
+
+    ul li a {
+        display: block;
+        color: white;
+        padding: 15px 20px;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    ul li a:hover {
+        background-color: rgb(196, 231, 255);
+        color: #50697d;
+    }
+}
+
+.sidebar {
+    position: fixed;
+    width: 16em;
+    height: auto;
+    top:60px;
+    padding: 10px;
+    z-index: 1;
+    overflow-x: hidden;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1.5px aliceblue;
+    border-style: dashed;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#icon {
+    display:block;
+    border-radius: 50%;
+    padding: 5px;
+    width: 8em;
+    height: 8em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1{
+    color:rgb(202, 18, 18);
+    font-size:xx-large;
+    position: center;
+    font-family:'Times New Roman', Times, serif;
+    padding:5pt;
+}
+
+.download {
+    background-color: #50697d;
+    border:2px white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    display: inline-block;
+    cursor:pointer;
+
+    a {
+        font-size: large;
+        font-family: 'Courier New', Courier, monospace;
+        color: rgb(196, 231, 255);
+        text-decoration: none;
+    }
+
+    a:hover {
+        color:white;
+    }
+    
+}
+
+.download:hover {
+    background-color: rgb(216, 31, 31);
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.main {
+    margin-left: 18em;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 10px;
+    overflow: auto;
+}
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    color:#50697d;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.box-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.box-fixed {
+    height: 200px;
+    width: 18em;
+    background-color: rgba(70, 106, 131,0.5);
+    border: 2px white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+h3 {
+    margin: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+    color:rgb(196, 231, 255);
+}
+
+ul.list-box {
+    list-style-type:circle;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.container {
+    border: 2px white;
+    border-radius: 5px;
+    background-color: rgba(70, 106, 131,0.5);
+    padding:10px;
+
+    h3{
+        text-align: center;
+        color:white;
+    }
+}
+
+h4 {
+    font-family: 'Times New Roman', Times, serif;
+    font-style:bold;
+    font-size: larger;
+    color:rgb(202, 18, 18);
+    margin-bottom: 5px;
+}
+
+h5 {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: medium;
+    color: rgb(196, 231, 255);
+    margin:0;
+    margin-left: 15px;
+}
+
+ul.list {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin-left:20px;
+}
+
+ul.list li {
+    margin: 10px;
+}
+
+.box {
+    height: auto;
+    width: 18em;
+    background-color: rgba(70, 106, 131,0.5);
+    border: 2px white;
+    border-radius: 5px;
+    padding: 10px;
+
+    h3{
+        text-align: center;
+        color:white;
+    }
+
+    p {
+        color:white;
+        margin-left:15px;
+    }
+}
+
+
+.contact{
+    ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: rgb(202, 18, 18);
+        display: flex;
+        justify-content: center;
+        position:relative;
+        width:100%;
+        z-index: 2;
+    }
+
+    ul li a {
+        display: block;
+        color: white;
+        padding: 15px 20px;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    ul li a:hover {
+        background-color: rgb(196, 231, 255);
+        color: rgb(202, 18, 18);
+    }
+}
+
+
+
+@media(max-width: 40em) {
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .main {
+        margin-left: 0%;
+    }
+
+    .box {
+        width: 100%;
+    }
+}
+
